@@ -7,3 +7,5 @@ P
  tests/asset-registration.test.ts,a/0/a094f6bd89fb354c1c00ca2f0d394be778fb1436
 C
 tests/test-utils.ts,9/f/9fda4008f387bc8dd541bb9f9e457fe6f5f4fc1e
+N
+contracts/lease-agreement.clar,f/1/f183ac7bc6aa030a029303506600e72885aa577b
