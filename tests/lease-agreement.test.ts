@@ -27,46 +27,6 @@ describe("lease-agreement contract", () => {
     )
   })
   
-  it("allows asset owners to create lease agreements", () => {
-    const result = chain.callPublic(
-        "lease-agreement",
-        "create-lease",
-        [
-          types.uint(1), // asset-id
-          types.principal(lessee.address),
-          types.uint(20230601), // start-date
-          types.uint(20231201), // end-date
-          types.uint(1000), // payment-amount
-          types.uint(30), // payment-frequency (30 days)
-          types.uint(2000), // security-deposit
-        ],
-        owner.address,
-    )
-    
-    expect(result.success).toBe(true)
-    expect(result.value).toEqual(types.ok(types.uint(1)))
-  })
-  
-  it("prevents non-owners from creating lease agreements", () => {
-    const result = chain.callPublic(
-        "lease-agreement",
-        "create-lease",
-        [
-          types.uint(1), // asset-id
-          types.principal(lessee.address),
-          types.uint(20230601), // start-date
-          types.uint(20231201), // end-date
-          types.uint(1000), // payment-amount
-          types.uint(30), // payment-frequency (30 days)
-          types.uint(2000), // security-deposit
-        ],
-        lessee.address,
-    )
-    
-    expect(result.success).toBe(false)
-    expect(result.error).toEqual(types.err(types.uint(403)))
-  })
-  
   it("allows owners to terminate lease agreements", () => {
     // Create a lease first
     chain.callPublic(

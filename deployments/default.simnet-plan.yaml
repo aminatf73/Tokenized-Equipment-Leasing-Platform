@@ -54,4 +54,19 @@ plan:
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/asset-registration.clar
             clarity-version: 2
+        - emulated-contract-publish:
+            contract-name: lease-agreement
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/lease-agreement.clar
+            clarity-version: 2
+        - emulated-contract-publish:
+            contract-name: maintenance-tracking
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/maintenance-tracking.clar
+            clarity-version: 2
+        - emulated-contract-publish:
+            contract-name: payment-automation
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/payment-automation.clar
+            clarity-version: 2
       epoch: "2.5"
