@@ -11,3 +11,5 @@ N
 contracts/lease-agreement.clar,f/1/f183ac7bc6aa030a029303506600e72885aa577b
 M
 tests/lease-agreement.test.ts,d/3/d3cd30712577f0510b2f02c5c8bb8d1d2909c992
+S
+#contracts/maintenance-tracking.clar,6/6/669dfd3e674286764c47d8cd1989b4a5a97fa253
