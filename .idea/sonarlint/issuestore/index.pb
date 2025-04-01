@@ -15,3 +15,7 @@ S
 #contracts/maintenance-tracking.clar,6/6/669dfd3e674286764c47d8cd1989b4a5a97fa253
 R
 "tests/maintenance-tracking.test.ts,1/a/1a9f8a448d6c81368c31b3701aeee0aab9c8b564
+Q
+!contracts/payment-automation.clar,c/a/cacc97d61b8a90836f7d1a1205624bc38636aa8f
+P
+ tests/payment-automation.test.ts,2/2/22aa999046f93ccd8556dd881dfd3187ee9b6ab9
